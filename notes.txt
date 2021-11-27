@@ -1,14 +1,25 @@
 Zip file from https://github.com/wso2/product-apim/releases/tag/v4.0.0/
-docker pull store/oracle/jdk:11
+Release notes at: https://github.com/wso2/product-apim/releases/tag/v4.0.0/
+
+---
+ubuntu image
+
+docker pull ubuntu
 
 ---
 build
 
 docker build -t wso2:1.0.0 .
 
+---
+run
+
+docker container run -it wso2:1.0.0
 
 ---
 prune
 
 docker container prune --all
-docker images prune --all
+docker images prune --alldocker images -f “dangling=true” -q
+
+docker images -f "dangling=true" -q   
