@@ -1,11 +1,12 @@
 FROM library/ubuntu
 
 RUN apt update && apt upgrade
+RUN apt install -y software-properties-common
 RUN mkdir -p /var/cache/oracle-jdk11-installer-local/
-RUN cp jdk-11.0.5_linux-x64_bin.tar.gz /var/cache/oracle-jdk11-installer-local/
+COPY oracle/ /tmp/
 RUN add-apt-repository ppa:linuxuprising/java
 RUN apt-get update
-RUN apt install oracle-java11-installer-local
+RUN apt install /tmp
 RUN java --version
 
 RUN echo "JAVA_HOME defined to point to ${JAVA_HOME}"
