@@ -14,18 +14,13 @@ RUN echo debconf shared/accepted-oracle-license-v1-2 select true | debconf-set-s
     echo debconf shared/accepted-oracle-license-v1-3 select true | debconf-set-selections && \
     echo debconf shared/accepted-oracle-license-v1-3 seen true | debconf-set-selections && \
     echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
-    #apt install -y oracle-java11-installer-local
 RUN ACCEPT_EULA=y apt install -y oracle-java17-installer --install-recommends
-
-
-#    apt-get update && apt-get install -y oracle-java11-installer
-
-
+ENV JAVA_HOME=/usr/bin/java
 RUN echo "JAVA_HOME defined to point to ${JAVA_HOME}"
 WORKDIR /app
 
 COPY ./wso2am-4.0.0 /usr/wso2am/
 
-# RUN /usr/wso2am/bin/api-manager.sh
+RUN /usr/wso2am/bin/api-manager.sh
 
 CMD ["bash"]
