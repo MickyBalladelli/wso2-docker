@@ -1,2 +1,14 @@
-docker login docker.wso2.com
-docker run -it -p 9443:9443 -p 8243:8243 -p 8280:8280 docker.wso2.com/wso2am
+Zip file from https://github.com/wso2/product-apim/releases/tag/v4.0.0/
+docker pull store/oracle/jdk:11
+
+---
+build
+
+docker build -t wso2:1.0.0 .
+
+
+---
+prune
+
+docker container prune --all
+docker images prune --all
