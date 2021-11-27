@@ -15,7 +15,7 @@ RUN echo debconf shared/accepted-oracle-license-v1-2 select true | debconf-set-s
     echo debconf shared/accepted-oracle-license-v1-3 seen true | debconf-set-selections && \
     echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 RUN ACCEPT_EULA=y apt install -y oracle-java17-installer --install-recommends
-ENV JAVA_HOME=/usr/bin/java
+ENV JAVA_HOME=/usr
 RUN echo "JAVA_HOME defined to point to ${JAVA_HOME}"
 WORKDIR /app
 
