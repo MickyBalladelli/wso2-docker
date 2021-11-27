@@ -1,1 +1,2 @@
 Zip file from https://github.com/wso2/product-apim/releases/tag/v4.0.0/
+docker pull store/oracle/jdk:11
