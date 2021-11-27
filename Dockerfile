@@ -19,8 +19,6 @@ ENV JAVA_HOME=/usr
 RUN echo "JAVA_HOME defined to point to ${JAVA_HOME}"
 WORKDIR /app
 
-COPY ./wso2am-4.0.0 /usr/wso2am/
+COPY ./wso2am-4.0.0 /usr/wso2am/ 
 
-RUN /usr/wso2am/bin/api-manager.sh
-
-CMD ["bash"]
+CMD ["/usr/wso2am/bin/api-manager.sh"]
