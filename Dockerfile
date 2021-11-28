@@ -17,4 +17,3 @@ WORKDIR /app
 COPY ./wso2am-4.0.0 /usr/wso2am/ 
 
 CMD ["/usr/wso2am/bin/api-manager.sh"]
-#CMD ["bash"]
