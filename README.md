@@ -1,6 +1,6 @@
 # WSO2 Docker build
 
-##Requirements
+## Requirements
 
 - Zip file from https://github.com/wso2/product-apim/releases/tag/v4.0.0/ 
   Unzip into a folder named wso2am-4.0.0 and place this folder in same folder as Dockerfile
@@ -18,8 +18,6 @@ docker build -t wso2:1.0.0 .
 ```
 docker run  -it -p 9443:9443 -p 8243:8243 -p 8280:8280 wso2:1.0.0
 ```
-
-https://localhost:9443/
 
 
 ### WSO2 products installed
