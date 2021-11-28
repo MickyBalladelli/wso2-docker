@@ -6,7 +6,6 @@
   Unzip into a folder named wso2am-4.0.0 and place this folder in same folder as Dockerfile
 - Download the Linux tar file jdk-11.0.5_linux-x64_bin.tar.gz from https://www.oracle.com/fr/java/technologies/javase/jdk11-archive-downloads.html
 
-Release notes at: https://github.com/wso2/product-apim/releases/tag/v4.0.0/
 
 ## build
 ```
