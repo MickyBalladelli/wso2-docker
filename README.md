@@ -21,7 +21,7 @@ docker build -t wso2:1.0.0 .
 ## run
 
 ```
-docker run  -it -p 9443:9443 -p 8243:8243 -p 8280:8280 wso2:1.0.0
+docker run -p 9443:9443 -p 8243:8243 -p 8280:8280 wso2:1.0.0
 ```
 
 
