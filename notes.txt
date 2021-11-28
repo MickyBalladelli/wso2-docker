@@ -1,4 +1,8 @@
-Zip file from https://github.com/wso2/product-apim/releases/tag/v4.0.0/
+Requirements:
+
+Zip file from https://github.com/wso2/product-apim/releases/tag/v4.0.0/ (unzip to same folder as Dockerfile into a folder named wso2am-4.0.0)
+Tarball jdk-11.0.5_linux-x64_bin.tar.gz https://www.oracle.com/fr/java/technologies/javase/jdk11-archive-downloads.html
+
 Release notes at: https://github.com/wso2/product-apim/releases/tag/v4.0.0/
 
 ---
