@@ -1,4 +1,4 @@
-# WSO2 Docker build
+# WSO2 4.0 Docker build
 
 ## Requirements
 
